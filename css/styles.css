@@ -441,6 +441,36 @@ footer.container {
   letter-spacing: 2%;
   padding-bottom: 16px;
 }
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-label {
+}
+.footer-input {
+  color: #ffffff;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+.footer-input::placeholder {
+  color: #ffffff;
+}
+
+.btn-form {
+  background-color: #4d5ae5;
+  padding: 8px 24px;
+  color: #ffffff;
+  font-weight: 500;
+}
 .footer-icon-div {
   padding-left: 0;
 }
