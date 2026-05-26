@@ -565,6 +565,22 @@ footer.container {
   transform: translateY(-50%);
   pointer-events: none;
 }
+.modal-form-error {
+  fill: red;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.modal-form-checkmark {
+  fill: green;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  opacity: 0;
+}
 .form-modal-label {
   display: block;
   font-size: 12px;
@@ -588,6 +604,29 @@ footer.container {
 .modal-form-input:focus + .modal-form-icon {
   fill: #404bbf;
 }
+/* Не валідне */
+.modal-form-input:not(:placeholder-shown):invalid:required {
+  border-color: red;
+}
+
+.modal-form-input:not(:placeholder-shown):invalid:required + .modal-form-icon {
+  fill: red;
+}
+.modal-form-input:not(:placeholder-shown):invalid:required ~ .modal-form-error {
+  opacity: 1;
+}
+/* Валідне */
+.modal-form-input:not(:placeholder-shown):valid:required + .modal-form-icon {
+  fill: green;
+}
+.modal-form-input:not(:placeholder-shown):valid:required {
+  border-color: green;
+}
+
+.modal-form-input:not(:placeholder-shown):valid:required
+  ~ .modal-form-checkmark {
+  opacity: 1;
+}
 .modal-form-input:focus {
   border-color: #4d5ae5;
 }
@@ -603,6 +642,14 @@ footer.container {
   margin-bottom: 16px;
   outline: none;
 }
+.modal-form-input::placeholder {
+  color: #2e2f4266;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.modal-form-input:focus::placeholder {
+  opacity: 1;
+}
 .modal-form-textarea::placeholder {
   color: #2e2f4266;
 }
@@ -614,6 +661,25 @@ footer.container {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 4%;
+}
+.checkbox-agreement {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  color: transparent;
+  border-radius: 6px;
+  border: 1px solid rgba(25, 25, 25, 1);
+}
+input[type='checkbox']:checked + .checkbox-agreement {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  color: #ffffff;
+}
+.checkbox-icon {
+  fill: currentColor;
 }
 .modal-dorm-desc {
 }
