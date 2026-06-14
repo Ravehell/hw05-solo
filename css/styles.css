@@ -79,6 +79,12 @@ button {
     display: flex;
   }
 }
+@media only screen and (max-width: 767.98px) {
+  .header {
+    padding-left: 16px;
+    padding: 24px 0;
+  }
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #4d5ae5;
@@ -94,6 +100,7 @@ button {
   .logo {
     margin-right: 76px;
     margin-left: 156px;
+    padding: 24px 16px;
   }
 }
 .span-logo {
