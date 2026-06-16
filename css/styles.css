@@ -669,7 +669,7 @@ footer.container {
 }
 @media only screen and (max-width: 767.98px) {
   .footer-icon-link {
-    margin-right: 56px;
+    margin-right: 30px;
   }
 }
 .footer-icon-link:hover,
@@ -951,7 +951,6 @@ input[type='checkbox']:checked + .checkbox-agreement {
   align-items: center;
   justify-content: center;
 
-  margin: px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1031,7 +1030,7 @@ input[type='checkbox']:checked + .checkbox-agreement {
 }
 .mobile-address {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.11;
 }
 .mobile-menu-address {
