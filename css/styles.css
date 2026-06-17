@@ -632,6 +632,12 @@ footer.container {
   align-items: flex-start;
   gap: 120px;
 }
+@media only screen and (max-width: 767.98px) {
+  footer.container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer-media {
   font-family: 500;
   letter-spacing: 2%;
@@ -640,6 +646,11 @@ footer.container {
 .footer-paragraph {
   color: #f4f4fd;
   max-width: 264px;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-paragraph {
+    text-align: center;
+  }
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -651,12 +662,26 @@ footer.container {
   text-transform: uppercase;
   margin-right: 76px;
 }
+@media only screen and (max-width: 767.98px) {
+  .footer-logo {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 16px;
+  }
+}
 .span-logo-footer {
   color: #f4f4fd;
 }
 .footer-icon-list {
   display: flex;
   gap: 16px;
+}
+@media only screen and (max-width: 767.98px) {
+  .footer-icon-list {
+    gap: 16px;
+  }
 }
 .footer-icon-link {
   display: flex;
@@ -668,9 +693,22 @@ footer.container {
   border-radius: 50%;
 }
 @media only screen and (max-width: 767.98px) {
-  .footer-icon-link {
+  .mobile-icon-link {
     margin-right: 30px;
   }
+}
+.mobile-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #404bbf;
+  border-radius: 50%;
+}
+.mobile-icon-link:hover,
+.mobile-icon-link:focus {
+  background-color: aqua;
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
@@ -684,9 +722,15 @@ footer.container {
   letter-spacing: 2%;
   padding-bottom: 16px;
 }
+@media only screen and (max-width: 767.98px) {
+  .footer-p {
+    text-align: center;
+  }
+}
 .footer-form {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer-label {
@@ -704,6 +748,11 @@ footer.container {
   line-height: 24px;
   letter-spacing: 4%;
 }
+@media only screen and (max-width: 767.98px) {
+  .footer-input {
+    width: 100%;
+  }
+}
 .footer-input::placeholder {
   color: #ffffff;
 }
@@ -717,6 +766,13 @@ footer.container {
   color: #ffffff;
   font-weight: 500;
   border-radius: 4px;
+}
+@media only screen and (max-width: 767.98px) {
+  .btn-form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .btn-form:hover,
 .btn-form:focus {
